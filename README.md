@@ -1,4 +1,4 @@
-# PC CHandra stores
+# PC Chandra stores
 
 Run the following commands
 
