@@ -56,25 +56,25 @@ const StoreLocator: React.FC = () => {
   };
 
   return (
-    <div className="max-w-[1280px] mx-auto">
-      <h1 className="text-[#AF1F2D] text-[32px] font-medium text-center mb-4">
+    <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 className="text-[#AF1F2D] text-2xl sm:text-3xl md:text-[32px] font-medium text-center mb-3 sm:mb-4 mt-6 sm:mt-8">
         Store Locator
       </h1>
-      <p className="text-[#878787] text-center mb-6">Available with 69 store all around India in popular cities.</p>
+      <p className="text-[#878787] text-sm sm:text-base text-center mb-4 sm:mb-6">Available with 69 store all around India in popular cities.</p>
       
-      <div className="flex justify-center items-center my-6">
-        <div className="flex items-center gap-4">
-          <div className="w-[840px]">
+      <div className="flex justify-center items-center my-4 sm:my-6">
+        <div className="flex flex-col sm:flex-row items-center w-full gap-3 sm:gap-4">
+          <div className="w-full sm:w-[640px] md:w-[740px] lg:w-[840px]">
             <CommandSearch commands={commands} onSelect={handleSelect} />
           </div>
-          <Button className="w-[230px] h-[60px] relative -top-[2px]">
+          <Button className="w-full sm:w-[180px] md:w-[230px] h-[50px] sm:h-[60px] relative sm:-top-[2px]">
             Search
           </Button>
         </div>
       </div>
       
-      <div className="my-[80px] max-w-[1080px] mx-auto">
-        <div className="flex gap-4 justify-between">
+      <div className="my-8 sm:my-12 md:my-[80px] max-w-[1080px] mx-auto">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 justify-items-center">
           {cities.map(city => (
             <CityCard 
               key={city.id}
@@ -86,7 +86,7 @@ const StoreLocator: React.FC = () => {
         </div>
       </div>
       
-      <div className="mb-[80px] max-w-[1080px] mx-auto">
+      <div className="mb-8 sm:mb-12 md:mb-[80px] max-w-[1080px] mx-auto">
         <AdBanner ads={advertisements} />
       </div>
     </div>

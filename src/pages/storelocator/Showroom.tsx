@@ -3,8 +3,8 @@ import { useParams } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import StarRating from '@/components/Reusables/StarRating';
 import ContactStoreCard from '@/components/Reusables/ContactStoreCard';
-import StoreImagesCarousel from '@/components/Reusables/StoreImagesCarousel';
-import ShowroomCard from '@/components/Reusables/ShowroomCard';
+import StoreImagesCarousel from '@/components/Reusables/StoreImagesCarouselResponsive';
+import OtherStoresCard from '@/components/Reusables/OtherStoresCard';
 import ProfStaffIcon from '@/assets/qualities/prof-staff.svg?react';
 import CertOfAuthenticityIcon from '@/assets/qualities/cert-of-authenticity.svg?react';
 import AuthenticPurityIcon from '@/assets/qualities/authentic-purity.svg?react';
@@ -125,9 +125,9 @@ const Showroom: React.FC = () => {
   };
 
   return (
-    <div className="mx-auto my-8 px-[52px]">
+    <div className="mx-auto my-8 px-0 sm:px-4 lg:px-[52px]">
       {/* Top Banner - No longer sticky */}
-      <div className="p-4 md:p-6 mb-8 z-10">
+      <div className="py-4 mb-8 z-10">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
           <div className="flex flex-col md:flex-row md:items-center gap-3">
             <h1 className="text-[#AF1F2D] text-2xl font-medium">{showroomDetails.name}</h1>
@@ -165,9 +165,9 @@ const Showroom: React.FC = () => {
         <p className="text-gray-600 text-sm mt-2">{showroomDetails.address}</p>
       </div>
       
-      <div className="flex flex-col lg:flex-row gap-8">
+      <div className="flex flex-col-reverse lg:flex-row gap-8">
         {/* Left Column */}
-        <div className="w-full lg:w-auto" style={{ width: "500px" }}>
+        <div className="w-full lg:w-[500px]">
           {/* Contact Store Card */}
           <ContactStoreCard 
             phone={showroomDetails.phone}
@@ -179,7 +179,7 @@ const Showroom: React.FC = () => {
           />
           
           {/* Qualities Banner */}
-          <div className="bg-white shadow-[0px_1px_4px_0px_#0000000F] p-6">
+          <div className="hidden sm:block bg-white shadow-[0px_1px_4px_0px_#0000000F] p-6">
             <div className="flex flex-wrap justify-center items-center gap-8">
               <div className="flex flex-col items-center text-center">
                 <div className="w-[70px] mb-3 flex items-center justify-center">
@@ -220,20 +220,24 @@ const Showroom: React.FC = () => {
         </div>
         
         {/* Right Column */}
-        <div className="w-full lg:flex-1 flex flex-col gap-6">
+        <div className="w-full lg:flex-1 flex flex-col gap-6 overflow-hidden">
           {/* Map and Gallery Card */}
           <div className="bg-white shadow-[0px_1px_4px_0px_#0000000F] flex flex-col">
             {/* Map section */}
-            <div className="min-h-[400px] flex items-center justify-center p-[30px]">
-              <iframe 
-                src="https://www.google.com/maps/d/embed?mid=1De-ROxhGfh7a8YtDILyz239x-DnYxQ4&ehbc=2E312F&noprof=1" 
-                width="100%" 
-                height="400px"
-              ></iframe>
+            <div className="min-h-[400px] flex items-center justify-center p-0 sm:p-[30px]">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235713.11386298144!2d88.23273251546361!3d22.615825258555965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0275bb4df8a5fb%3A0x8c7baba17ab3b6a0!2sP.C.Chandra%20Jewellers%2C%20Gariahat!5e0!3m2!1sen!2sin!4v1746251402381!5m2!1sen!2sin"
+              width="100%"
+              height="400"
+              style={{ border: 0 }}
+              allowFullScreen={true}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
             </div>
             
             {/* Store Images Carousel */}
-            <StoreImagesCarousel images={galleryImages} width={910} />
+            <StoreImagesCarousel images={galleryImages} />
           </div>
         </div>
       </div>
@@ -252,16 +256,15 @@ const Showroom: React.FC = () => {
       {/* Other Showrooms Section */}
       <div className="w-full mt-12 mb-8">
         <h2 className="text-2xl font-medium text-[#AF1F2D] mb-6">Other Showrooms</h2>
-        <div className="flex flex-nowrap overflow-x-auto gap-6 pb-4">
+        <div className="flex flex-wrap gap-4">
           {otherShowrooms.map(showroom => (
-            <div key={showroom.id} className="flex-shrink-0" style={{ width: "350px" }}>
-              <ShowroomCard 
+            <div key={showroom.id} className="w-full sm:w-[calc(50%-8px)] md:w-[calc(33.333%-11px)] lg:w-[300px]">
+              <OtherStoresCard 
                 id={showroom.id}
                 name={showroom.name}
                 address={showroom.address}
                 phone={showroom.phone}
                 state={showroom.state}
-                rating={showroom.rating}
                 status={showroom.status}
                 closingTime={showroom.closingTime}
                 mapUrl={showroom.mapUrl}

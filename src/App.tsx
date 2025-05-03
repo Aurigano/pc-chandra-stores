@@ -11,7 +11,7 @@ function App() {
     <Router>
       <div className="app min-h-screen">
         <DynamicBreadcrumb />
-        <div className="mx-auto px-4">
+        <div className="mx-auto px-0 sm:px-4">
           
           <Routes>
             <Route path="/storelocator" element={<StoreLocator />} />
