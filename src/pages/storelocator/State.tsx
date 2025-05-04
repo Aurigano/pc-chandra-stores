@@ -6,146 +6,158 @@ import { Button } from '@/components/ui/button';
 import ProfStaffIcon from '@/assets/qualities/prof-staff.svg?react';
 import CertOfAuthenticityIcon from '@/assets/qualities/cert-of-authenticity.svg?react';
 import AuthenticPurityIcon from '@/assets/qualities/authentic-purity.svg?react';
+import { useShowroomStore } from '@/store/showroomStore';
+import useScrollToTop from '@/hooks/useScrollToTop';
 
 // Extended showroom interface with additional display properties
-interface ExtendedShowroom {
-  id: string;
-  name: string;
-  address: string;
-  phone: string;
-  coords: { lat: number; lng: number };
-  rating: number;
-  status: 'open' | 'closed' | 'closing_soon';
-  closingTime: string;
-  cityName: string;
-}
+// interface ExtendedShowroom {
+//   id: string;
+//   name: string;
+//   address: string;
+//   phone: string;
+//   coords: { lat: number; lng: number };
+//   rating: number;
+//   status: 'open' | 'closed' | 'closing_soon';
+//   closingTime: string;
+//   cityName: string;
+// }
 
 const State: React.FC = () => {
+  useScrollToTop();
+  
   const { state } = useParams<{ state: string }>();
   const [selectedShowroom, setSelectedShowroom] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
 
   // Example showrooms data with all required properties - in a real app, this would come from an API
-  const showroomsData: ExtendedShowroom[] = [
-    // New Delhi showrooms
-    { 
-      id: 'delhi-central', 
-      name: 'Delhi Central', 
-      address: '123 Connaught Place, New Delhi', 
-      phone: '+91 11 2345 6789', 
-      coords: { lat: 28.6329, lng: 77.2195 },
-      rating: 4.8,
-      status: 'open',
-      closingTime: '9:30 PM',
-      cityName: 'new-delhi'
-    },
-    { 
-      id: 'delhi-south', 
-      name: 'Delhi South', 
-      address: '456 South Extension, New Delhi', 
-      phone: '+91 11 8765 4321', 
-      coords: { lat: 28.5733, lng: 77.2233 },
-      rating: 4.2,
-      status: 'closing_soon',
-      closingTime: '7:00 PM',
-      cityName: 'new-delhi'
-    },
-    // Bengaluru showrooms
-    { 
-      id: 'bangalore-central', 
-      name: 'Bangalore Central', 
-      address: '789 MG Road, Bangalore', 
-      phone: '+91 80 2345 6789', 
-      coords: { lat: 12.9716, lng: 77.5946 },
-      rating: 4.5,
-      status: 'open',
-      closingTime: '9:00 PM',
-      cityName: 'bengaluru'
-    },
-    { 
-      id: 'bangalore-south', 
-      name: 'Bangalore South', 
-      address: '321 Jayanagar, Bangalore', 
-      phone: '+91 80 8765 4321', 
-      coords: { lat: 12.9250, lng: 77.5938 },
-      rating: 3.8,
-      status: 'closed',
-      closingTime: '9:00 PM',
-      cityName: 'bengaluru'
-    },
-    // Mumbai showrooms
-    { 
-      id: 'mumbai-central', 
-      name: 'Mumbai Central', 
-      address: '567 Marine Drive, Mumbai', 
-      phone: '+91 22 2345 6789', 
-      coords: { lat: 18.9442, lng: 72.8234 },
-      rating: 4.9,
-      status: 'open',
-      closingTime: '10:00 PM',
-      cityName: 'mumbai'
-    },
-    { 
-      id: 'mumbai-west', 
-      name: 'Mumbai West', 
-      address: '890 Bandra West, Mumbai', 
-      phone: '+91 22 8765 4321', 
-      coords: { lat: 19.0596, lng: 72.8295 },
-      rating: 4.1,
-      status: 'closing_soon',
-      closingTime: '7:30 PM',
-      cityName: 'mumbai'
-    },
-    // Kolkata showrooms
-    { 
-      id: 'kolkata-central', 
-      name: 'Kolkata Central', 
-      address: '234 Park Street, Kolkata', 
-      phone: '+91 33 2345 6789', 
-      coords: { lat: 22.5726, lng: 88.3639 },
-      rating: 4.3,
-      status: 'open',
-      closingTime: '8:30 PM',
-      cityName: 'kolkata'
-    },
-    // Hyderabad showrooms
-    { 
-      id: 'hyderabad-central', 
-      name: 'Hyderabad Central', 
-      address: '432 Banjara Hills, Hyderabad', 
-      phone: '+91 40 2345 6789', 
-      coords: { lat: 17.4065, lng: 78.4772 },
-      rating: 4.0,
-      status: 'closing_soon',
-      closingTime: '7:45 PM',
-      cityName: 'hyderabad'
-    },
-    // Jaipur showrooms
-    { 
-      id: 'jaipur-central', 
-      name: 'Jaipur Central', 
-      address: '678 MI Road, Jaipur', 
-      phone: '+91 14 2345 6789', 
-      coords: { lat: 26.9239, lng: 75.8267 },
-      rating: 3.7,
-      status: 'closed',
-      closingTime: '8:00 PM',
-      cityName: 'jaipur'
-    },
-  ];
+  // const showroomsData: ExtendedShowroom[] = [
+  //   // New Delhi showrooms
+  //   { 
+  //     id: 'delhi-central', 
+  //     name: 'Delhi Central', 
+  //     address: '123 Connaught Place, New Delhi', 
+  //     phone: '+91 11 2345 6789', 
+  //     coords: { lat: 28.6329, lng: 77.2195 },
+  //     rating: 4.8,
+  //     status: 'open',
+  //     closingTime: '9:30 PM',
+  //     cityName: 'new-delhi'
+  //   },
+  //   { 
+  //     id: 'delhi-south', 
+  //     name: 'Delhi South', 
+  //     address: '456 South Extension, New Delhi', 
+  //     phone: '+91 11 8765 4321', 
+  //     coords: { lat: 28.5733, lng: 77.2233 },
+  //     rating: 4.2,
+  //     status: 'closing_soon',
+  //     closingTime: '7:00 PM',
+  //     cityName: 'new-delhi'
+  //   },
+  //   // Bengaluru showrooms
+  //   { 
+  //     id: 'bangalore-central', 
+  //     name: 'Bangalore Central', 
+  //     address: '789 MG Road, Bangalore', 
+  //     phone: '+91 80 2345 6789', 
+  //     coords: { lat: 12.9716, lng: 77.5946 },
+  //     rating: 4.5,
+  //     status: 'open',
+  //     closingTime: '9:00 PM',
+  //     cityName: 'bengaluru'
+  //   },
+  //   { 
+  //     id: 'bangalore-south', 
+  //     name: 'Bangalore South', 
+  //     address: '321 Jayanagar, Bangalore', 
+  //     phone: '+91 80 8765 4321', 
+  //     coords: { lat: 12.9250, lng: 77.5938 },
+  //     rating: 3.8,
+  //     status: 'closed',
+  //     closingTime: '9:00 PM',
+  //     cityName: 'bengaluru'
+  //   },
+  //   // Mumbai showrooms
+  //   { 
+  //     id: 'mumbai-central', 
+  //     name: 'Mumbai Central', 
+  //     address: '567 Marine Drive, Mumbai', 
+  //     phone: '+91 22 2345 6789', 
+  //     coords: { lat: 18.9442, lng: 72.8234 },
+  //     rating: 4.9,
+  //     status: 'open',
+  //     closingTime: '10:00 PM',
+  //     cityName: 'mumbai'
+  //   },
+  //   { 
+  //     id: 'mumbai-west', 
+  //     name: 'Mumbai West', 
+  //     address: '890 Bandra West, Mumbai', 
+  //     phone: '+91 22 8765 4321', 
+  //     coords: { lat: 19.0596, lng: 72.8295 },
+  //     rating: 4.1,
+  //     status: 'closing_soon',
+  //     closingTime: '7:30 PM',
+  //     cityName: 'mumbai'
+  //   },
+  //   // Kolkata showrooms
+  //   { 
+  //     id: 'kolkata-central', 
+  //     name: 'Kolkata Central', 
+  //     address: '234 Park Street, Kolkata', 
+  //     phone: '+91 33 2345 6789', 
+  //     coords: { lat: 22.5726, lng: 88.3639 },
+  //     rating: 4.3,
+  //     status: 'open',
+  //     closingTime: '8:30 PM',
+  //     cityName: 'kolkata'
+  //   },
+  //   // Hyderabad showrooms
+  //   { 
+  //     id: 'hyderabad-central', 
+  //     name: 'Hyderabad Central', 
+  //     address: '432 Banjara Hills, Hyderabad', 
+  //     phone: '+91 40 2345 6789', 
+  //     coords: { lat: 17.4065, lng: 78.4772 },
+  //     rating: 4.0,
+  //     status: 'closing_soon',
+  //     closingTime: '7:45 PM',
+  //     cityName: 'hyderabad'
+  //   },
+  //   // Jaipur showrooms
+  //   { 
+  //     id: 'jaipur-central', 
+  //     name: 'Jaipur Central', 
+  //     address: '678 MI Road, Jaipur', 
+  //     phone: '+91 14 2345 6789', 
+  //     coords: { lat: 26.9239, lng: 75.8267 },
+  //     rating: 3.7,
+  //     status: 'closed',
+  //     closingTime: '8:00 PM',
+  //     cityName: 'jaipur'
+  //   },
+  // ];
+
+  const { getShowroomsByCity, showrooms } = useShowroomStore();
+
+  // Debug logs
+  console.log('Current state:', state);
+  console.log('All showrooms:', showrooms);
 
   // Get showrooms for the current state
-  const stateShowrooms = showroomsData.filter(showroom => showroom.cityName === state);
+  const stateShowrooms = getShowroomsByCity(state?.replace(/-/g, ' ') || '');
+  console.log('State showrooms:', stateShowrooms);
 
   // Filter showrooms based on search query
   const filteredShowrooms = stateShowrooms.filter(showroom => 
     showroom.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-    showroom.address.toLowerCase().includes(searchQuery.toLowerCase())
+    showroom.street.toLowerCase().includes(searchQuery.toLowerCase())
   );
+  console.log('Filtered showrooms:', filteredShowrooms);
 
   // Search commands based on showrooms
   const searchCommands = stateShowrooms.map(showroom => ({
-    value: showroom.id,
+    value: showroom.url_key,
     label: showroom.name
   }));
 
@@ -162,7 +174,6 @@ const State: React.FC = () => {
   // Execute search
   const executeSearch = () => {
     console.log("Searching for:", searchQuery);
-    // Additional search logic can be added here
   };
 
   return (
@@ -211,20 +222,20 @@ const State: React.FC = () => {
             <div className="flex flex-col">
               {filteredShowrooms.map((showroom) => (
                 <ShowroomCard
-                  key={showroom.id}
-                  id={showroom.id}
+                  key={showroom.url_key}
+                  id={showroom.url_key}
                   name={showroom.name}
-                  address={showroom.address}
-                  phone={showroom.phone}
+                  address={showroom.street}
+                  phone={showroom.telephone}
                   state={state || ""}
-                  rating={showroom.rating}
-                  status={showroom.status}
-                  closingTime={showroom.closingTime}
+                  rating={4.5} // Default rating since it's not in the store data
+                  status={showroom.status === "1" ? "open" : "closed"}
+                  closingTime={showroom.schedule.mon.to.join(':')}
                   mapUrl={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-                    showroom.address
+                    showroom.street
                   )}`}
-                  isSelected={selectedShowroom === showroom.id}
-                  onSelect={() => handleShowroomSelect(showroom.id)}
+                  isSelected={selectedShowroom === showroom.url_key}
+                  onSelect={() => handleShowroomSelect(showroom.url_key)}
                 />
               ))}
             </div>

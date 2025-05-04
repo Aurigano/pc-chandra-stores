@@ -6,29 +6,63 @@ import AdBanner from '@/components/Reusables/AdBanner';
 import DelhiIcon from '@/assets/delhi.svg?react';
 import JaipurIcon from '@/assets/jaipur.svg?react';
 import HyderabadIcon from '@/assets/hyderabad.svg?react';
+import MumbaiIcon from '@/assets/mumbai.svg?react';
 import BengaluruIcon from '@/assets/bangalore.svg?react';
 import KolkataIcon from '@/assets/kolkata.svg?react';
-import MumbaiIcon from '@/assets/mumbai.svg?react';
+import { useNavigate } from 'react-router-dom';
+import { useShowroomStore } from '@/store/showroomStore';
+import useScrollToTop from '@/hooks/useScrollToTop';
 
 const StoreLocator: React.FC = () => {
-  const commands = [
-    { value: "new-delhi", label: "New Delhi" },
-    { value: "jaipur", label: "Jaipur" },
-    { value: "hyderabad", label: "Hyderabad" },
-    { value: "bengaluru", label: "Bengaluru" },
-    { value: "kolkata", label: "Kolkata" },
-    { value: "mumbai", label: "Mumbai" },
-  ];
+  useScrollToTop();
+  
+  // Mock data for reference
+  // const commands = [
+  //   { value: "new-delhi", label: "New Delhi" },
+  //   { value: "jaipur", label: "Jaipur" },
+  //   { value: "hyderabad", label: "Hyderabad" },
+  //   { value: "bengaluru", label: "Bengaluru" },
+  //   { value: "kolkata", label: "Kolkata" },
+  //   { value: "mumbai", label: "Mumbai" },
+  // ];
+
+  // const cities = [
+  //   { id: "new-delhi", name: "New Delhi", icon: <DelhiIcon height={50} width={'auto'} /> },
+  //   { id: "jaipur", name: "Jaipur", icon: <JaipurIcon height={50} width={'auto'} /> },
+  //   { id: "hyderabad", name: "Hyderabad", icon: <HyderabadIcon height={50} width={'auto'} /> },
+  //   { id: "bengaluru", name: "Bengaluru", icon: <BengaluruIcon height={50} width={'auto'} /> },
+  //   { id: "kolkata", name: "Kolkata", icon: <KolkataIcon height={50} width={'auto'} /> },
+  //   { id: "mumbai", name: "Mumbai", icon: <MumbaiIcon height={50} width={'auto'} /> },
+  // ];
+
+  const navigate = useNavigate();
+  const { showrooms } = useShowroomStore();
+
+  // Cities to show
+  const citiesToShow = ['Kolkata', 'Bengaluru', 'Ahmedabad', 'Agartala', 'Asansol', 'Silchar'];
+
+  // Map city names to their corresponding icons
+  const cityIcons: Record<string, React.ReactNode> = {
+    'Kolkata': <KolkataIcon height={50} width={'auto'} />,
+    'Bengaluru': <BengaluruIcon height={50} width={'auto'} />,
+    'Ahmedabad': <DelhiIcon height={50} width={'auto'} />,
+    'Agartala': <JaipurIcon height={50} width={'auto'} />,
+    'Asansol': <HyderabadIcon height={50} width={'auto'} />,
+    'Silchar': <MumbaiIcon height={50} width={'auto'} />,
+  };
+
+  // Create commands for search using the specified cities
+  const commands = citiesToShow.map(city => ({
+    value: city.toLowerCase().replace(/\s+/g, '-'),
+    label: city
+  }));
   
   // List of cities with their icons
-  const cities = [
-    { id: "new-delhi", name: "New Delhi", icon: <DelhiIcon height={50} width={'auto'} /> },
-    { id: "jaipur", name: "Jaipur", icon: <JaipurIcon height={50} width={'auto'} /> },
-    { id: "hyderabad", name: "Hyderabad", icon: <HyderabadIcon height={50} width={'auto'} /> },
-    { id: "bengaluru", name: "Bengaluru", icon: <BengaluruIcon height={50} width={'auto'} /> },
-    { id: "kolkata", name: "Kolkata", icon: <KolkataIcon height={50} width={'auto'} /> },
-    { id: "mumbai", name: "Mumbai", icon: <MumbaiIcon height={50} width={'auto'} /> },
-  ];
+  const cityCards = citiesToShow.map(city => ({
+    id: city.toLowerCase().replace(/\s+/g, '-'),
+    name: city,
+    icon: cityIcons[city] || <DelhiIcon height={50} width={'auto'} /> // Fallback to Delhi icon
+  }));
   
   // Advertisement data
   const advertisements = [
@@ -43,16 +77,14 @@ const StoreLocator: React.FC = () => {
       linkUrl: '/collections/diamond'
     },
     {
-      imageUrl: '/assets/ad1.png', // Using ad1 again as placeholder for the third ad
+      imageUrl: '/assets/ad1.png',
       altText: 'Wedding Season Offers',
       linkUrl: '/promotions/wedding'
     }
   ];
   
   const handleSelect = (value: string) => {
-    // We can use this to track selection if needed for other purposes
-    console.log("Selected:", value);
-    // Note: Navigation is now handled directly in the CommandSearch component
+    navigate(`/storelocator/${value}`);
   };
 
   return (
@@ -60,11 +92,13 @@ const StoreLocator: React.FC = () => {
       <h1 className="text-[#AF1F2D] text-2xl sm:text-3xl md:text-[32px] font-medium text-center mb-3 sm:mb-4 mt-6 sm:mt-8">
         Store Locator
       </h1>
-      <p className="text-[#878787] text-sm sm:text-base text-center mb-4 sm:mb-6">Available with 69 store all around India in popular cities.</p>
+      <p className="text-[#878787] text-sm sm:text-base text-center mb-4 sm:mb-6">
+        Available with {showrooms.length} stores all around India in popular cities.
+      </p>
       
       <div className="flex justify-center items-center my-4 sm:my-6">
-        <div className="flex flex-col sm:flex-row items-center w-full gap-3 sm:gap-4">
-          <div className="w-full sm:w-[640px] md:w-[740px] lg:w-[840px]">
+        <div className="flex flex-col sm:flex-row items-center w-full max-w-[1080px] gap-3 sm:gap-4">
+          <div className="w-full max-w-[640px] sm:max-w-[740px] md:max-w-[840px]">
             <CommandSearch commands={commands} onSelect={handleSelect} />
           </div>
           <Button className="w-full sm:w-[180px] md:w-[230px] h-[50px] sm:h-[60px] relative sm:-top-[2px]">
@@ -74,8 +108,8 @@ const StoreLocator: React.FC = () => {
       </div>
       
       <div className="my-8 sm:my-12 md:my-[80px] max-w-[1080px] mx-auto">
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 justify-items-center">
-          {cities.map(city => (
+        <div className="flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-8">
+          {cityCards.map(city => (
             <CityCard 
               key={city.id}
               cityId={city.id}
