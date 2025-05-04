@@ -10,17 +10,51 @@ import CertOfAuthenticityIcon from '@/assets/qualities/cert-of-authenticity.svg?
 import AuthenticPurityIcon from '@/assets/qualities/authentic-purity.svg?react';
 import WhatsAppIcon from '@/assets/icons/whatsapp.svg?react';
 import GoogleIcon from '@/assets/icons/google.svg?react';
+import { useShowroomStore } from '@/store/showroomStore';
+import useScrollToTop from '@/hooks/useScrollToTop';
+
+// Define the schedule interface
+interface Schedule {
+  status?: string;
+  from: [string, string];
+  to: [string, string];
+  break_from: [string, string];
+  break_to: [string, string];
+}
 
 const Showroom: React.FC = () => {
-  const { showroom } = useParams<{ state: string; showroom: string }>();
+  useScrollToTop();
+  
+  const { state, showroom } = useParams<{ state: string; showroom: string }>();
+  const { getShowroomByUrlKey, getShowroomsByCity, showrooms } = useShowroomStore();
 
-  // Helper function to capitalize words
-  const capitalizeWords = (str: string): string => {
-    return str
-      .split(' ')
-      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-      .join(' ');
-  };
+  // Debug logs
+  console.log('Current showroom URL key:', showroom);
+  console.log('All showrooms:', showrooms);
+
+  // Get the current showroom details
+  const showroomDetails = getShowroomByUrlKey(showroom || '');
+  console.log('Showroom details:', showroomDetails);
+
+  const currentCity = showroomDetails?.city || '';
+  console.log('Current city:', currentCity);
+
+  // Get other showrooms in the same city
+  const otherShowrooms = getShowroomsByCity(currentCity)
+    .filter(s => s.url_key !== showroom)
+    .slice(0, 3)
+    .map(s => ({
+      id: s.url_key,
+      name: s.name,
+      address: s.street,
+      phone: s.telephone,
+      state: s.city.toLowerCase().replace(/\s+/g, '-'),
+      rating: 4.5, // Default rating since it's not in the store data
+      status: s.status === "1" ? "open" as const : "closed" as const,
+      closingTime: s.schedule.mon.to.join(':'),
+      mapUrl: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(s.street)}`
+    }));
+  console.log('Other showrooms:', otherShowrooms);
 
   // Create an array of 10 gallery images by repeating the available images
   const galleryImages = Array(10).fill(null).map((_, index) => {
@@ -29,82 +63,14 @@ const Showroom: React.FC = () => {
     return `/assets/gallery/${imageNumber}.png`;
   });
 
-  // Example showroom details - in a real app, this would come from an API
-  const showroomDetails = {
-    name: capitalizeWords(showroom?.replace(/-/g, ' ') || 'Showroom'),
-    address: '123 Main Street, New Delhi, 110001',
-    phone: '+91 1234567890',
-    email: 'contact@showroom.com',
-    status: 'open' as 'open' | 'closed' | 'closing_soon',
-    closingTime: '9:30 PM',
-    rating: 4.6,
-    hours: {
-      monday: '9:00 AM - 7:30 PM',
-      tuesday: '9:00 AM - 7:30 PM',
-      wednesday: '9:00 AM - 7:30 PM',
-      thursday: '9:00 AM - 7:30 PM',
-      friday: '9:00 AM - 7:30 PM',
-      saturday: '9:00 AM - 7:30 PM',
-      sunday: '9:00 AM - 7:30 PM',
-    },
-    parking: ["Street Parking", "Valet Parking Available"],
-    languages: ["English", "Hindi", "Tamil", "Bengali"],
-    paymentMethods: ["Credit Card", "Debit Card", "UPI", "Cash", "BNPL"],
-    mapUrl: 'https://www.google.com/maps?q=123+Main+Street,+New+Delhi',
-    gallery: [
-      '/assets/showroom1.jpg',
-      '/assets/showroom2.jpg',
-      '/assets/showroom3.jpg',
-      '/assets/showroom4.jpg',
-    ]
-  };
-
-  // Other showrooms nearby - in a real app, this would come from an API
-  const otherShowrooms = [
-    {
-      id: 'delhi-central',
-      name: 'Delhi Central',
-      address: '123 Connaught Place, New Delhi',
-      phone: '+91 11 2345 6789',
-      state: 'new-delhi',
-      rating: 4.8,
-      status: 'open' as const,
-      closingTime: '9:30 PM',
-      mapUrl: 'https://www.google.com/maps?q=123+Connaught+Place,+New+Delhi'
-    },
-    {
-      id: 'delhi-south',
-      name: 'Delhi South',
-      address: '456 South Extension, New Delhi',
-      phone: '+91 11 8765 4321',
-      state: 'new-delhi',
-      rating: 4.2,
-      status: 'closing_soon' as const,
-      closingTime: '7:00 PM',
-      mapUrl: 'https://www.google.com/maps?q=456+South+Extension,+New+Delhi'
-    },
-    {
-      id: 'delhi-west',
-      name: 'Delhi West',
-      address: '789 Rajouri Garden, New Delhi',
-      phone: '+91 11 5555 1234',
-      state: 'new-delhi',
-      rating: 3.9,
-      status: 'closed' as const,
-      closingTime: '8:30 PM',
-      mapUrl: 'https://www.google.com/maps?q=789+Rajouri+Garden,+New+Delhi'
-    }
-  ];
-
+  if (!showroomDetails) {
+    return <div>Showroom not found</div>;
+  }
   // Status styling - only open has green color
   const getStatusStyle = () => {
     switch(showroomDetails.status) {
-      case 'open':
+      case "1":
         return 'bg-green-50 text-green-600';
-      case 'closing_soon':
-        return 'bg-red-50 text-red-600';
-      case 'closed':
-        return 'bg-gray-100 text-gray-600';
       default:
         return 'bg-gray-100 text-gray-600';
     }
@@ -113,15 +79,27 @@ const Showroom: React.FC = () => {
   // Status label
   const getStatusLabel = () => {
     switch(showroomDetails.status) {
-      case 'open':
+      case "1":
         return 'Open';
-      case 'closing_soon':
-        return 'Closing Soon';
-      case 'closed':
-        return 'Closed Now';
       default:
-        return '';
+        return 'Closed Now';
     }
+  };
+
+  // Format hours for display
+  const formatHours = (schedule: Schedule) => {
+    const formatTime = (time: [string, string]) => time.join(':');
+    return `${formatTime(schedule.from)} - ${formatTime(schedule.to)}`;
+  };
+
+  const hours = {
+    monday: formatHours(showroomDetails.schedule.mon),
+    tuesday: formatHours(showroomDetails.schedule.tue),
+    wednesday: formatHours(showroomDetails.schedule.wed),
+    thursday: formatHours(showroomDetails.schedule.thu),
+    friday: formatHours(showroomDetails.schedule.fri),
+    saturday: formatHours(showroomDetails.schedule.sat),
+    sunday: formatHours(showroomDetails.schedule.sun),
   };
 
   return (
@@ -130,29 +108,32 @@ const Showroom: React.FC = () => {
       <div className="py-4 mb-8 z-10">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
           <div className="flex flex-col md:flex-row md:items-center gap-3">
-            <h1 className="text-[#AF1F2D] text-2xl font-medium">{showroomDetails.name}</h1>
+            <div className="flex flex-col md:flex-row md:items-center gap-3">
+              <h1 className="text-[#AF1F2D] text-2xl font-medium">{showroomDetails.name}</h1>
+              
             
             <div className="flex items-center mt-2 md:mt-0 md:ml-3">
               <span className={`text-xs px-2 py-1 rounded-sm ${getStatusStyle()}`}>
                 {getStatusLabel()}
               </span>
-              {showroomDetails.status !== 'closed' && (
+              {showroomDetails.status === "1" && (
                 <span className="text-xs text-gray-500 ml-1 font-medium">
-                  Till {showroomDetails.closingTime}
+                  Till {showroomDetails.schedule.mon.to.join(':')}
                 </span>
               )}
             </div>
-          </div>
-          <div className="flex items-center gap-2 mt-2 md:mt-0">
-              <GoogleIcon width={20} height={20} className="mr-1" />
-              <StarRating rating={showroomDetails.rating} size={20} />
-              <span className="font-medium">{showroomDetails.rating}/5</span>
+            <div className="flex items-center gap-2">
+                <GoogleIcon width={16} height={16} className="mr-1" />
+                <StarRating rating={4.5} size={16} />
+                <span className="font-medium text-sm">4.5/5</span>
+              </div>
             </div>
+          </div>
           
           <div className="flex gap-3 mt-3 md:mt-0">
             <Button 
               className="flex items-center gap-2 bg-green-600 hover:bg-green-700 flex-1 md:flex-none"
-              onClick={() => window.open(`https://wa.me/${showroomDetails.phone.replace(/\D/g, '')}`)}
+              onClick={() => window.open(`https://wa.me/${showroomDetails.telephone.replace(/\D/g, '')}`)}
             >
               <WhatsAppIcon width={18} height={18} />
               WhatsApp
@@ -162,7 +143,7 @@ const Showroom: React.FC = () => {
             </Button>
           </div>
         </div>
-        <p className="text-gray-600 text-sm mt-2">{showroomDetails.address}</p>
+        <p className="text-gray-600 text-sm mt-2">{showroomDetails.street}</p>
       </div>
       
       <div className="flex flex-col-reverse lg:flex-row gap-8">
@@ -170,12 +151,12 @@ const Showroom: React.FC = () => {
         <div className="w-full lg:w-[500px]">
           {/* Contact Store Card */}
           <ContactStoreCard 
-            phone={showroomDetails.phone}
+            phone={showroomDetails.telephone}
             email={showroomDetails.email}
-            mapUrl={showroomDetails.mapUrl}
-            hours={showroomDetails.hours}
-            parking={showroomDetails.parking}
-            languages={showroomDetails.languages}
+            mapUrl={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(showroomDetails.street)}`}
+            hours={hours}
+            parking={["Street Parking", "Valet Parking Available"]}
+            languages={["English", "Hindi", "Tamil", "Bengali"]}
           />
           
           {/* Qualities Banner */}
@@ -201,20 +182,6 @@ const Showroom: React.FC = () => {
                 </div>
                 <span className="text-base text-[#878787]">Professional Staff</span>
               </div>
-              
-              <div className="flex flex-col items-center text-center">
-                <div className="w-[70px] mb-3 flex items-center justify-center">
-                  <CertOfAuthenticityIcon width="100%" height="70px" />
-                </div>
-                <span className="text-base text-[#878787]">Certificate of Authenticity</span>
-              </div>
-              
-              <div className="flex flex-col items-center text-center">
-                <div className="w-[70px] mb-3 flex items-center justify-center">
-                  <ProfStaffIcon width="100%" height="70px" />
-                </div>
-                <span className="text-base text-[#878787]">Professional Staff</span>
-              </div>
             </div>
           </div>
         </div>
@@ -225,15 +192,15 @@ const Showroom: React.FC = () => {
           <div className="bg-white shadow-[0px_1px_4px_0px_#0000000F] flex flex-col">
             {/* Map section */}
             <div className="min-h-[400px] flex items-center justify-center p-0 sm:p-[30px]">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235713.11386298144!2d88.23273251546361!3d22.615825258555965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0275bb4df8a5fb%3A0x8c7baba17ab3b6a0!2sP.C.Chandra%20Jewellers%2C%20Gariahat!5e0!3m2!1sen!2sin!4v1746251402381!5m2!1sen!2sin"
-              width="100%"
-              height="400"
-              style={{ border: 0 }}
-              allowFullScreen={true}
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
+              <iframe
+                src={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235713.11386298144!2d88.23273251546361!3d22.615825258555965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0275bb4df8a5fb%3A0x8c7baba17ab3b6a0!2s${encodeURIComponent(showroomDetails.name)}!5e0!3m2!1sen!2sin!4v1746251402381!5m2!1sen!2sin`}
+                width="100%"
+                height="400"
+                style={{ border: 0 }}
+                allowFullScreen={true}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
             
             {/* Store Images Carousel */}
