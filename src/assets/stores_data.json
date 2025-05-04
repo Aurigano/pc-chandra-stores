@@ -1,0 +1,1742 @@
+[
+    {
+        "name": "Ahmedabad Showroom",
+        "url_key": "ahmedabad-showroom",
+        "status": "1",
+        "thumbnail": "",
+        "email": "goldlites.ahmedabad@gmail.com",
+        "web_text": "",
+        "web": "",
+        "street": "Shree balaji heights, GF-07, Near IDBI bank, Bodyline, Chimanlal Girdharlal Rd, Char Rasta, C G",
+        "city": "Ahmedabad",
+        "region": "Gujarat",
+        "postcode": "380009",
+        "country": "India",
+        "lat": "23.029063",
+        "lng": "72.556938",
+        "telephone": "9081253100",
+        "description": "<p>&nbsp;</p>",
+        "schedule": {
+            "mon": {
+                "status": "on",
+                "from": ["14", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "tue": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "wed": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "thu": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "fri": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "sat": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "sun": {
+                "from": ["00", "00"],
+                "to": ["00", "00"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            }
+        },
+        "sort_order": "",
+        "products": "",
+        "tags": "",
+        "social": "",
+        "icon_marker": "",
+        "meta_description": "",
+        "meta_title": ""
+    },
+    {
+        "name": "Agartala Showroom",
+        "url_key": "agartala-showroom",
+        "status": "1",
+        "thumbnail": "",
+        "email": "pcc_agartala@yahoo.in",
+        "web_text": "",
+        "web": "",
+        "street": "P.C.Chandra Jewellery Apex Pvt.Ltd, 60, H. G. B. Road, Paradise Chowmohani",
+        "city": "Agartala",
+        "region": "Tripura",
+        "postcode": "799001",
+        "country": "India",
+        "lat": "23.8297288",
+        "lng": "91.2742095",
+        "telephone": "7005801725",
+        "description": "<p>&nbsp;</p>",
+        "schedule": {
+            "mon": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["20", "00"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "tue": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["20", "00"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "wed": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["20", "00"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "thu": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["20", "00"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "fri": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["20", "00"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "sat": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["20", "00"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "sun": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["20", "00"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            }
+        },
+        "sort_order": "",
+        "products": "",
+        "tags": "",
+        "social": "",
+        "icon_marker": "",
+        "meta_description": "",
+        "meta_title": ""
+    },
+    {
+        "name": "Arambagh Showroom",
+        "url_key": "arambagh-showroom",
+        "status": "1",
+        "thumbnail": "",
+        "email": "pccapex@pcchandraindia.com",
+        "web_text": "",
+        "web": "",
+        "street": "Goldlites India Pvt.Limited, 214/F, Link Road, Ward No. 3,P.O. Arambagh",
+        "city": "Hooghly",
+        "region": "West Bengal",
+        "postcode": "712601",
+        "country": "India",
+        "lat": "22.750874",
+        "lng": "87.7496768",
+        "telephone": "03211 255004/05",
+        "description": "<p>&nbsp;</p>",
+        "schedule": {
+            "mon": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "tue": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "wed": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "thu": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "fri": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "sat": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "sun": {
+                "from": ["00", "00"],
+                "to": ["00", "00"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            }
+        },
+        "sort_order": "",
+        "products": "",
+        "tags": "",
+        "social": "",
+        "icon_marker": "",
+        "meta_description": "",
+        "meta_title": ""
+    },
+    {
+        "name": "Asansol Showroom",
+        "url_key": "asansol-showroom",
+        "status": "1",
+        "thumbnail": "",
+        "email": "pccasansol@pcchandraindia.com",
+        "web_text": "",
+        "web": "",
+        "street": "P.C.Chandra Jewellery Apex Pvt.Ltd, Laxmi Narayan Avenue, 71, G.T. Road (E),Murgasol",
+        "city": "Asansol",
+        "region": "West Bengal",
+        "postcode": "713303",
+        "country": "India",
+        "lat": "23.6807384",
+        "lng": "86.9892767",
+        "telephone": "0341-2274331 / 91-9674400480",
+        "description": "<p>&nbsp;</p>",
+        "schedule": {
+            "mon": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "tue": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "wed": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "thu": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "fri": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "sat": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "sun": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            }
+        },
+        "sort_order": "",
+        "products": "",
+        "tags": "",
+        "social": "",
+        "icon_marker": "",
+        "meta_description": "",
+        "meta_title": ""
+    },
+    {
+        "name": "Girish Park Showroom",
+        "url_key": "girish-park-showroom",
+        "status": "1",
+        "thumbnail": "",
+        "email": "pccglobalvkroad@yahoo.com",
+        "web_text": "",
+        "web": "",
+        "street": "P.C. Chandra Jewellers, 79, Vivekananda Road,Opposite Simla Byam Samiti",
+        "city": "Kolkata",
+        "region": "West Bengal",
+        "postcode": "700006",
+        "country": "India",
+        "lat": "22.5862691",
+        "lng": "88.3620978",
+        "telephone": "91-9830906029",
+        "description": "<p>&nbsp;</p>",
+        "schedule": {
+            "mon": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "tue": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "wed": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "thu": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "fri": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "sat": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "sun": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            }
+        },
+        "sort_order": "",
+        "products": "",
+        "tags": "",
+        "social": "",
+        "icon_marker": "",
+        "meta_description": "",
+        "meta_title": ""
+    },
+    {
+        "name": "Balurghat Showroom",
+        "url_key": "balurghat-showroom",
+        "status": "1",
+        "thumbnail": "",
+        "email": "pccbalurghat@pcchandraindia.com",
+        "web_text": "",
+        "web": "",
+        "street": "P.C.Chandra Jewellery Apex Pvt.Ltd, 227/213, Nazrul Sarani Narayanpur,P.O+P.S-Balurghat",
+        "city": "Dinajpur",
+        "region": "West Bengal",
+        "postcode": "733101",
+        "country": "India",
+        "lat": "25.2244388",
+        "lng": "88.7785921",
+        "telephone": "9674725067",
+        "description": "<p>&nbsp;</p>",
+        "schedule": {
+            "mon": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "tue": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "wed": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "thu": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "fri": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "sat": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "sun": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            }
+        },
+        "sort_order": "",
+        "products": "",
+        "tags": "",
+        "social": "",
+        "icon_marker": "",
+        "meta_description": "",
+        "meta_title": ""
+    },
+    {
+        "name": "Bankura Showroom",
+        "url_key": "bankura-showroom",
+        "status": "1",
+        "thumbnail": "",
+        "email": "pccapex@pcchandraindia.com",
+        "web_text": "",
+        "web": "",
+        "street": "P.C.Chandra Jewellery Apex Pvt.Ltd, 68/5/A, Ward No-21, Natunchati,P.O & P.S:- Bankura",
+        "city": "Bankura",
+        "region": "West Bengal",
+        "postcode": "722101",
+        "country": "India",
+        "lat": "22.9161241",
+        "lng": "87.0373704",
+        "telephone": "9230772815",
+        "description": "<p>&nbsp;</p>",
+        "schedule": {
+            "mon": {
+                "status": "on",
+                "from": ["10", "30"],
+                "to": ["19", "00"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "tue": {
+                "status": "on",
+                "from": ["10", "30"],
+                "to": ["19", "00"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "wed": {
+                "status": "on",
+                "from": ["10", "30"],
+                "to": ["19", "00"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "thu": {
+                "status": "on",
+                "from": ["10", "30"],
+                "to": ["19", "00"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "fri": {
+                "status": "on",
+                "from": ["10", "30"],
+                "to": ["19", "00"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "sat": {
+                "status": "on",
+                "from": ["10", "30"],
+                "to": ["19", "00"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "sun": {
+                "status": "on",
+                "from": ["10", "30"],
+                "to": ["19", "00"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            }
+        },
+        "sort_order": "",
+        "products": "",
+        "tags": "",
+        "social": "",
+        "icon_marker": "",
+        "meta_description": "",
+        "meta_title": ""
+    },
+    {
+        "name": "Barasat Showroom",
+        "url_key": "barasat-showroom",
+        "status": "1",
+        "thumbnail": "",
+        "email": "barasat@pcchandraindia.com",
+        "web_text": "",
+        "web": "",
+        "street": "P.C.Chandra & Sons (India) Pvt.Ltd, 43, Jessore Road (S)",
+        "city": "Barasat",
+        "region": "West Bengal",
+        "postcode": "700124",
+        "country": "India",
+        "lat": "22.7115744",
+        "lng": "88.4731395",
+        "telephone": "033-2584-3093/3092",
+        "description": "<p>&Acirc;&nbsp;</p>",
+        "schedule": {
+            "mon": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "tue": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "wed": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "thu": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "fri": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "sat": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "sun": {
+                "from": ["00", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            }
+        },
+        "sort_order": "",
+        "products": "",
+        "tags": "",
+        "social": "",
+        "icon_marker": "",
+        "meta_description": "",
+        "meta_title": ""
+    },
+    {
+        "name": "Barrackpore Showroom",
+        "url_key": "barrackpore-showroom",
+        "status": "1",
+        "thumbnail": "",
+        "email": "pcc.barrackpore@pcchandraindia.com",
+        "web_text": "",
+        "web": "",
+        "street": "P.C.Chandra Juels International Pvt.Ltd., 23 (14), S.N.Banerjee Road",
+        "city": "Barrackpore",
+        "region": "West Bengal",
+        "postcode": "700120",
+        "country": "India",
+        "lat": "22.7615868",
+        "lng": "88.3643735",
+        "telephone": "033-25945000,91-9007100280",
+        "description": "<p>&nbsp;</p>",
+        "schedule": {
+            "mon": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "tue": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "wed": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "thu": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "fri": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "sat": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "sun": {
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            }
+        },
+        "sort_order": "",
+        "products": "",
+        "tags": "",
+        "social": "",
+        "icon_marker": "",
+        "meta_description": "",
+        "meta_title": ""
+    },
+    {
+        "name": "Baruipur Showroom",
+        "url_key": "baruipur-showroom",
+        "status": "1",
+        "thumbnail": "",
+        "email": "pcc@vsnl.com",
+        "web_text": "",
+        "web": "",
+        "street": "P.C.Chandra Jewellers Pvt.Ltd., 440, Kulpi Road",
+        "city": "Baruipur",
+        "region": "West Bengal",
+        "postcode": "700144",
+        "country": "India",
+        "lat": "22.3608165",
+        "lng": "88.4296994",
+        "telephone": "91-8336923150/91-8336923180",
+        "description": "<p>&nbsp;</p>",
+        "schedule": {
+            "mon": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "tue": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "wed": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "thu": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "fri": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "sat": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "sun": {
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            }
+        },
+        "sort_order": "",
+        "products": "",
+        "tags": "",
+        "social": "",
+        "icon_marker": "",
+        "meta_description": "",
+        "meta_title": ""
+    },
+    {
+        "name": "Behala Showroom",
+        "url_key": "behala-showroom",
+        "status": "1",
+        "thumbnail": "",
+        "email": "behala@pcchandraindia.com",
+        "web_text": "",
+        "web": "",
+        "street": "Behala ShowroomP.C.Chandra Juels International Pvt.Ltd., 293/1 Diamond Harbour Road",
+        "city": "Kolkata",
+        "region": "West Bengal",
+        "postcode": "700034",
+        "country": "India",
+        "lat": "22.5044865",
+        "lng": "88.3193043",
+        "telephone": "6291669474",
+        "description": "<p>&nbsp;</p>",
+        "schedule": {
+            "mon": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "tue": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "wed": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "thu": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "fri": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "sat": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "sun": {
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            }
+        },
+        "sort_order": "",
+        "products": "",
+        "tags": "",
+        "social": "",
+        "icon_marker": "",
+        "meta_description": "",
+        "meta_title": ""
+    },
+    {
+        "name": "Bengaluru (Koramangala) Showroom",
+        "url_key": "bengaluru-showroom",
+        "status": "1",
+        "thumbnail": "",
+        "email": "pcckoramangala@pcchandraindia.com",
+        "web_text": "",
+        "web": "",
+        "street": "Site No 42 Koramangala 6th block extension 100 ft Road , Koramangala Bengaluru -560095 (Near Sony Signals Beside Bank of Boroda )",
+        "city": "Bengaluru",
+        "region": "Karnataka",
+        "postcode": "560095",
+        "country": "India",
+        "lat": "",
+        "lng": "",
+        "telephone": "",
+        "description": "<p>&nbsp;</p>",
+        "schedule": {
+            "mon": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "tue": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "wed": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "thu": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "fri": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "sat": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "sun": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            }
+        },
+        "sort_order": "",
+        "products": "",
+        "tags": "",
+        "social": "",
+        "icon_marker": "",
+        "meta_description": "",
+        "meta_title": ""
+    },
+    {
+        "name": "Silchar Showroom",
+        "url_key": "silchar-showroom",
+        "status": "1",
+        "thumbnail": "",
+        "email": "pccsilchar@pcchandraindia.com",
+        "web_text": "",
+        "web": "",
+        "street": "P.C.Chandra & Sons (India) Pvt.Ltd., Central Road, near Oriental Cinema Hall",
+        "city": "Silchar",
+        "region": "Assam",
+        "postcode": "788001",
+        "country": "India",
+        "lat": "24.8246451",
+        "lng": "92.8004499",
+        "telephone": "6000501687",
+        "description": "<p>&nbsp;</p>",
+        "schedule": {
+            "mon": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "tue": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "wed": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "thu": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "fri": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "sat": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "sun": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            }
+        },
+        "sort_order": "",
+        "products": "",
+        "tags": "",
+        "social": "",
+        "icon_marker": "",
+        "meta_description": "",
+        "meta_title": ""
+    },
+    {
+        "name": "Siliguri Showroom",
+        "url_key": "siliguri-showroom",
+        "status": "1",
+        "thumbnail": "",
+        "email": "pcc_slg@yahoo.com",
+        "web_text": "",
+        "web": "",
+        "street": "P.C.Chandra Jewellery Apex Pvt.Ltd, Rajani Centre, Hill cart Road, Besdie Meghdoot Cinema Hall",
+        "city": "Darjeeling",
+        "region": "West Bengal",
+        "postcode": "734001",
+        "country": "India",
+        "lat": "26.7130727",
+        "lng": "83.810852",
+        "telephone": "8100714630",
+        "description": "<p>&nbsp;</p>",
+        "schedule": {
+            "mon": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "tue": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "wed": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "thu": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "fri": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "sat": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "sun": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            }
+        },
+        "sort_order": "",
+        "products": "",
+        "tags": "",
+        "social": "",
+        "icon_marker": "",
+        "meta_description": "",
+        "meta_title": ""
+    },
+    {
+        "name": "Siuri Showroom",
+        "url_key": "siuri-showroom",
+        "status": "1",
+        "thumbnail": "",
+        "email": "pcc.siuri@pcchandraindia.com",
+        "web_text": "",
+        "web": "",
+        "street": "P.C.Chandra Jewellery Apex Pvt.Ltd, Holding No.532/783, Ward No.19, Rasoraj Complex,Suri-Bolpur Road",
+        "city": "Birbhum",
+        "region": "West Bengal",
+        "postcode": "731101",
+        "country": "India",
+        "lat": "23.9024075",
+        "lng": "87.5258734",
+        "telephone": "9674400928",
+        "description": "<p>&nbsp;</p>",
+        "schedule": {
+            "mon": {
+                "status": "on",
+                "from": ["10", "30"],
+                "to": ["19", "00"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "tue": {
+                "status": "on",
+                "from": ["10", "30"],
+                "to": ["19", "00"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "wed": {
+                "status": "on",
+                "from": ["10", "30"],
+                "to": ["19", "00"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "thu": {
+                "status": "on",
+                "from": ["10", "30"],
+                "to": ["19", "00"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "fri": {
+                "status": "on",
+                "from": ["10", "30"],
+                "to": ["19", "00"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "sat": {
+                "status": "on",
+                "from": ["10", "30"],
+                "to": ["19", "00"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "sun": {
+                "status": "on",
+                "from": ["10", "30"],
+                "to": ["19", "00"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            }
+        },
+        "sort_order": "",
+        "products": "",
+        "tags": "",
+        "social": "",
+        "icon_marker": "",
+        "meta_description": "",
+        "meta_title": ""
+    },
+    {
+        "name": "Sodepur Showroom",
+        "url_key": "sodepur-showroom",
+        "status": "1",
+        "thumbnail": "",
+        "email": "sodepur@pcchanraindia.com",
+        "web_text": "",
+        "web": "",
+        "street": "P.C.Chandra & Sons (India) Pvt.Ltd143/A, Isha Apartment, Ground Floor,Sodepur",
+        "city": "Kolkata",
+        "region": "West Bengal",
+        "postcode": "700110",
+        "country": "India",
+        "lat": "22.6969863177252",
+        "lng": "88.39074910483528",
+        "telephone": "033-2565-5251/52",
+        "description": "<p>&nbsp;</p>",
+        "schedule": {
+            "mon": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "tue": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "wed": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "thu": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "fri": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "sat": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "sun": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            }
+        },
+        "sort_order": "",
+        "products": "",
+        "tags": "",
+        "social": "",
+        "icon_marker": "",
+        "meta_description": "",
+        "meta_title": ""
+    },
+    {
+        "name": "Tamluk Showroom",
+        "url_key": "tamluk-showroom",
+        "status": "1",
+        "thumbnail": "",
+        "email": "pcctamluk@gmail.com",
+        "web_text": "",
+        "web": "",
+        "street": "P.C.Chandra Jewellery Apex Pvt.Ltd, Vill-Partabtipur, Rakshit More (Near Bargabheema Temple)",
+        "city": "Tamluk",
+        "region": "West Bengal",
+        "postcode": "721636",
+        "country": "India",
+        "lat": "22.2895377",
+        "lng": "87.3486309",
+        "telephone": "03228-266525/91-9800080575",
+        "description": "<p>&nbsp;</p>",
+        "schedule": {
+            "mon": {
+                "status": "on",
+                "from": ["10", "30"],
+                "to": ["19", "00"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "tue": {
+                "status": "on",
+                "from": ["10", "30"],
+                "to": ["19", "00"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "wed": {
+                "status": "on",
+                "from": ["10", "30"],
+                "to": ["19", "00"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "thu": {
+                "status": "on",
+                "from": ["10", "30"],
+                "to": ["19", "00"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "fri": {
+                "status": "on",
+                "from": ["10", "30"],
+                "to": ["19", "00"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "sat": {
+                "status": "on",
+                "from": ["10", "30"],
+                "to": ["19", "00"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "sun": {
+                "from": ["00", "00"],
+                "to": ["00", "00"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            }
+        },
+        "sort_order": "",
+        "products": "",
+        "tags": "",
+        "social": "",
+        "icon_marker": "",
+        "meta_description": "",
+        "meta_title": ""
+    },
+    {
+        "name": "Ultadanga Showroom 1",
+        "url_key": "ultadanga-showroom-1",
+        "status": "1",
+        "thumbnail": "",
+        "email": "pccgems@vsnl.net",
+        "web_text": "",
+        "web": "",
+        "street": "P.C.Chandra Gems Pvt.Ltd., P-154A, Nazrul Islam Avenue, CIT Scheme VII-M",
+        "city": "Kolkata",
+        "region": "West Bengal",
+        "postcode": "700054",
+        "country": "India",
+        "lat": "22.5898526",
+        "lng": "88.390342",
+        "telephone": "033-2355-4747/48",
+        "description": "<p>&nbsp;</p>",
+        "schedule": {
+            "mon": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "tue": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "wed": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "thu": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "fri": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "sat": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "sun": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            }
+        },
+        "sort_order": "",
+        "products": "",
+        "tags": "",
+        "social": "",
+        "icon_marker": "",
+        "meta_description": "",
+        "meta_title": ""
+    },
+    {
+        "name": "Ultadanga Showroom 2",
+        "url_key": "ultadanga-showroom-2",
+        "status": "1",
+        "thumbnail": "",
+        "email": "pccgems@vsnl.net",
+        "web_text": "",
+        "web": "",
+        "street": "P.C.Chandra Gems Pvt.Ltd., P-157, Nazrul Islam Avenue, CIT Scheme VII-M",
+        "city": "Kolkata",
+        "region": "West Bengal",
+        "postcode": "700054",
+        "country": "India",
+        "lat": "22.5898526",
+        "lng": "88.390342",
+        "telephone": "033-2355-4747/48",
+        "description": "<p>&nbsp;</p>",
+        "schedule": {
+            "mon": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "tue": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "wed": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "thu": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "fri": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "sat": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "sun": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            }
+        },
+        "sort_order": "",
+        "products": "",
+        "tags": "",
+        "social": "",
+        "icon_marker": "",
+        "meta_description": "",
+        "meta_title": ""
+    },
+    {
+        "name": "Uttarpara Showroom",
+        "url_key": "uttarpara-showroom",
+        "status": "1",
+        "thumbnail": "",
+        "email": "customercare@pcchandraindia.com",
+        "web_text": "",
+        "web": "",
+        "street": "P.C.Chandra Jewellers Pvt.Ltd., 87, Amarendra Sarani, KotrungUttarpara",
+        "city": "Hooghly",
+        "region": "West Bengal",
+        "postcode": "712258",
+        "country": "India",
+        "lat": "22.6597286",
+        "lng": "88.3470002",
+        "telephone": "033-2664 - 0087/0088",
+        "description": "<p>&nbsp;</p>",
+        "schedule": {
+            "mon": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "tue": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "wed": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "thu": {
+                "from": ["11", "00"],
+                "to": ["20", "00"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "fri": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "sat": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "sun": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            }
+        },
+        "sort_order": "",
+        "products": "",
+        "tags": "",
+        "social": "",
+        "icon_marker": "",
+        "meta_description": "",
+        "meta_title": ""
+    },
+    {
+        "name": "Tobin Road Showroom",
+        "url_key": "tobin-road-showroom",
+        "status": "1",
+        "thumbnail": "",
+        "email": "",
+        "web_text": "",
+        "web": "",
+        "street": "251 BT Road, Baranagar",
+        "city": "Kolkata",
+        "region": "West Bengal",
+        "postcode": "700036",
+        "country": "India",
+        "lat": "22.638917847869543",
+        "lng": "88.3781416650671",
+        "telephone": "91237 49088",
+        "description": "<p>&nbsp;</p>",
+        "schedule": {
+            "mon": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["20", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "tue": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["20", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "wed": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["20", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "thu": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["20", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "fri": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["20", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "sat": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["20", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "sun": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["20", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            }
+        },
+        "sort_order": "",
+        "products": "",
+        "tags": "",
+        "social": "",
+        "icon_marker": "",
+        "meta_description": "",
+        "meta_title": ""
+    },
+    {
+        "name": "Guwahati Showroom",
+        "url_key": "guwahati-showroom",
+        "status": "1",
+        "thumbnail": "",
+        "email": "pcc.guwahati@pcchandraindia.com",
+        "web_text": "",
+        "web": "",
+        "street": "Boraj Arcade, GS Rd, South Sarania",
+        "city": "Lachit Nagar, Guwahati",
+        "region": "Assam",
+        "postcode": "781007",
+        "country": "India",
+        "lat": "26.170163",
+        "lng": "91.763267",
+        "telephone": "6001771539, 0361-2914311, 0361-2914275, 0361-2914502",
+        "description": "<p>&nbsp;</p>",
+        "schedule": {
+            "mon": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["20", "00"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "tue": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["20", "00"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "wed": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["20", "00"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "thu": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["20", "00"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "fri": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["20", "00"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "sat": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["20", "00"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "sun": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["20", "00"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            }
+        },
+        "sort_order": "",
+        "products": "",
+        "tags": "",
+        "social": "",
+        "icon_marker": "",
+        "meta_description": "",
+        "meta_title": ""
+    },
+    {
+        "name": "Ranaghat Showrom",
+        "url_key": "ranaghat-showrom",
+        "status": "1",
+        "thumbnail": "",
+        "email": "pccranaghat@pccnahdraindia.com",
+        "web_text": "",
+        "web": "",
+        "street": "119, GNPC Rd",
+        "city": "Ranaghat",
+        "region": "West Bengal",
+        "postcode": "741201",
+        "country": "India",
+        "lat": "23.1754218",
+        "lng": "88.5688747",
+        "telephone": "8334826101,  +913473450433",
+        "description": "<p>&nbsp;</p>",
+        "schedule": {
+            "mon": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "tue": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "wed": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "thu": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "fri": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "sat": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            },
+            "sun": {
+                "status": "on",
+                "from": ["11", "00"],
+                "to": ["19", "30"],
+                "break_from": ["00", "00"],
+                "break_to": ["00", "00"]
+            }
+        },
+        "sort_order": "",
+        "products": "",
+        "tags": "",
+        "social": "",
+        "icon_marker": "",
+        "meta_description": "",
+        "meta_title": ""
+    }
+]
